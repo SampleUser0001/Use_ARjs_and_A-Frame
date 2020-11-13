@@ -46,6 +46,7 @@ AR.jsとA-Frameを使ってみる
 
 - [Qiita : 【AR.js入門】簡単にWebARで遊んでみた【A-Frame使うよ】](https://qiita.com/sakaryu/items/769a2a538baf7e4ee1c7)
   - オリジナルはこれ。
+    - オリジナルと比較してファイルが足りないけど動くぞ？
 
 - [A-Frame](https://aframe.io/docs/1.0.0/introduction/)
   - [a-scene](https://aframe.io/docs/1.0.0/core/scene.html#sidebar)
