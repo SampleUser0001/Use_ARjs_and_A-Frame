@@ -7,7 +7,10 @@
 <body style='margin:0px; overflow:hidden;'>
 <!-- こっからA-Frame -->
 <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;" vr-mode-ui="enabled: false">
+    <!-- オブジェクトファイルとマテリアルファイルを読み込む -->
     <a-assets>
+        <a-asset-item id="santa-obj" src="model_obj/santa/santa.obj"></a-asset-item>
+        <a-asset-item id="santa-mtl" src="model_obj/santa/santa.mtl"></a-asset-item>
     </a-assets>
     <!-- arなのでこんな感じでカメラが必要らしい。 -->
     <a-entity camera></a-entity>
