@@ -31,6 +31,18 @@ AR.jsとA-Frameを使ってみる
 </html>
 ```
 
+- a-sceneタグ
+  - A-Frameタグを使用する宣言。  
+- a-asserts
+  - 資材ロードするためのタグ。
+  - a-asset-item
+    - ロードする資材を指定する。
+
+
 ## 参考
 
 - [Qiita : 【AR.js入門】簡単にWebARで遊んでみた【A-Frame使うよ】](https://qiita.com/sakaryu/items/769a2a538baf7e4ee1c7)
+
+- [A-Frame](https://aframe.io/docs/1.0.0/introduction/)
+  - [a-scene](https://aframe.io/docs/1.0.0/core/scene.html#sidebar)
+  - [a-asserts](https://aframe.io/docs/1.0.0/core/asset-management-system.html)
