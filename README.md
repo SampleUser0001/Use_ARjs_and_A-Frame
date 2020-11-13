@@ -18,7 +18,7 @@ AR.jsとA-Frameを使ってみる
         <a-asset-item id="santa-obj" src="model_obj/santa/santa.obj"></a-asset-item>
         <a-asset-item id="santa-mtl" src="model_obj/santa/santa.mtl"></a-asset-item>
     </a-assets>
-　　　　　　　　<!-- こっからARの世界。マーカー上になにを展開するかを書く -->
+    <!-- こっからARの世界。マーカー上になにを展開するかを書く -->
     <a-marker preset="hiro">
         <a-obj-model id="santa" src="#santa-obj" mtl="#santa-mtl" position="0 0 0" scale="0.5 0.5 0.5" rotation="0 0 0"></a-obj-model>
         <a-text value="Hello YouTube！!！" position="0 1.3 0" align="center"></a-text>
@@ -37,7 +37,10 @@ AR.jsとA-Frameを使ってみる
   - 資材ロードするためのタグ。
   - a-asset-item
     - ロードする資材を指定する。
-
+- a-marker
+  - presetで指定したマーカーがカメラに写ったときの挙動
+    - 「hiro」は「Hiro」って書いてあるマーカー。
+  - 子要素に表示させたいものを記載する。
 
 ## 参考
 
@@ -47,3 +50,5 @@ AR.jsとA-Frameを使ってみる
 - [A-Frame](https://aframe.io/docs/1.0.0/introduction/)
   - [a-scene](https://aframe.io/docs/1.0.0/core/scene.html#sidebar)
   - [a-asserts](https://aframe.io/docs/1.0.0/core/asset-management-system.html)
+  - a-marker
+    - 見つからない…
