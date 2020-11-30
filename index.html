@@ -6,47 +6,9 @@
     <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
     <!-- AR.js ライブラリの読み込み -->
     <script src="https://raw.githack.com/AR-js-org/AR.js/1.5.0/aframe/build/aframe-ar-nft.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
-    <style>
-        #page_top{
-        width: 50px;
-        height: 50px;
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        background: #3f98ef;
-        opacity: 0.6;
-        border-radius: 50%;
-        }
-        #page_top a{
-        position: relative;
-        display: block;
-        width: 50px;
-        height: 50px;
-        text-decoration: none;
-        }
-        #page_top a::before{
-        font-family: 'Font Awesome 5 Free';
-        font-weight: 900;
-        content: '\f102';
-        font-size: 25px;
-        color: #fff;
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        top: -5px;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        margin: auto;
-        text-align: center;
-        }
-    </style>
 </head>
 
-<body style='margin:0px; overflow:hidden;'>
-    <div id="page_top"><a href="#"></a></div>
-    
+<body style='margin:0px; overflow:hidden;'>    
     <!-- こっからA-Frame -->
     <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;" vr-mode-ui="enabled: false">
         <!-- オブジェクトファイルとマテリアルファイルを読み込む -->
