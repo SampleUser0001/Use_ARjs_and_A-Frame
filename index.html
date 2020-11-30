@@ -1,30 +1,25 @@
 <!doctype HTML>
 <html>
-<head>
-    <!-- A-FrameとAR.jsの最新はそれぞれ、1.0.4、3.0.0だが、マーカーに対する追随が不自然に見えるので、バージョンを戻す。 -->
-    <!-- A-Frame ライブラリの読み込み -->
-    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
-    <!-- AR.js ライブラリの読み込み -->
-    <script src="https://raw.githack.com/AR-js-org/AR.js/1.5.0/aframe/build/aframe-ar-nft.js"></script>
-</head>
-
-<body style='margin:0px; overflow:hidden;'>    
-    <!-- こっからA-Frame -->
-    <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;" vr-mode-ui="enabled: false">
-        <!-- オブジェクトファイルとマテリアルファイルを読み込む -->
-        <a-assets>
-            <a-asset-item id="santa-obj" src="model_obj/santa/santa.obj"></a-asset-item>
-            <a-asset-item id="santa-mtl" src="model_obj/santa/santa.mtl"></a-asset-item>
-        </a-assets>
-        <!-- こっからARの世界。マーカー上になにを展開するかを書く -->
-        <a-marker preset="hiro">
-            <a-obj-model id="santa" src="#santa-obj" mtl="#santa-mtl" position="0 0 0" scale="0.5 0.5 0.5" rotation="0 0 0"></a-obj-model>
-            <a-text value="Hello YouTube！!！" position="0 1.3 0" align="center"></a-text>
-        </a-marker>
-        <!-- arなのでこんな感じでカメラが必要らしい。 -->
-        <!-- a-cameraタブも存在するが、挙動が違う。マーカーの上に表示されなくなるが、スライドで動かせるようになる。-->
-        <a-entity camera></a-entity>
-    </a-scene>
-    <!-- ここまででA-Frameおわり -->
+<!-- A-Frame ライブラリの読み込み -->
+<script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+<!-- AR.js ライブラリの読み込み -->
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+<body style='margin:0px; overflow:hidden;'>
+<!-- こっからA-Frame -->
+<a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;" vr-mode-ui="enabled: false">
+    <!-- オブジェクトファイルとマテリアルファイルを読み込む -->
+    <a-assets>
+        <a-asset-item id="santa-obj" src="model_obj/santa/santa.obj"></a-asset-item>
+        <a-asset-item id="santa-mtl" src="model_obj/santa/santa.mtl"></a-asset-item>
+    </a-assets>
+    <!-- こっからARの世界。マーカー上になにを展開するかを書く -->
+    <a-marker preset="hiro">
+        <a-obj-model id="santa" src="#santa-obj" mtl="#santa-mtl" position="0 0 0" scale="0.5 0.5 0.5" rotation="0 0 0"></a-obj-model>
+        <a-text value="Hello YouTube！!！" position="0 1.3 0" align="center"></a-text>
+    </a-marker>
+    <!-- arなのでこんな感じでカメラが必要らしい。 -->
+    <a-entity camera></a-entity>
+</a-scene>
+<!-- ここまででA-Frameおわり -->
 </body>
 </html>
